@@ -13,9 +13,15 @@ header {
  display: flex;
  justify-content: space-between;
  flex-wrap: wrap;
+ position: -webkit-sticky;
  position: sticky;
  top: 0;
  background-color: grey;
+ background-image: url("../Images/20998787.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: 80%;
+ z-index: 9999;
 }
 
 header nav {
@@ -27,7 +33,7 @@ header h1 {
  font-size: 36px;
  color: white;
  margin: 0;
- text-shadow: 0 0 10px black;
+ text-shadow: 0 0 20px black;
 }
 
 header h1 a {
@@ -52,22 +58,26 @@ header nav ul li a {
  font-size: 1.55vw;
  color: white;
  list-style: none;
- text-shadow: 0 0 10px black;
+ text-shadow: 0 0 20px black;
  text-decoration: none;
- 
 }
 
 header nav ul li a:visited {
  text-decoration: none; color: white
 }
 
-.flex-row {
+.hero {
+ background-image: url('../Images/20998787.jpg');
+ background-size: cover;
  display: flex;
+ justify-content: center;
  flex-wrap: wrap;
- flex-direction: column;;
+ align-items: flex-start;
+ background-attachment: fixed;
+ background-position: 80%;
 }
 
-section h2 {
+.hero-about h2 {
  background-color: grey;
  color: white;
  margin: 25px;
@@ -77,12 +87,7 @@ section h2 {
  font-size: 1.5vw;
 }
 
-.section-title {
- font-size: 2vw;
- justify-content: center;
-}
-
-.about-me-photo img {
+.hero-about img {
  height: 90%;
  width: 30%;
  border: 2px solid black;
