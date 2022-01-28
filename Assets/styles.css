@@ -8,6 +8,7 @@ body {
  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* START HEADER STYLES */
 header {
  padding: 20px 35px;
  display: flex;
@@ -66,7 +67,73 @@ header nav ul li a:visited {
  text-decoration: none; color: white
 }
 
+header nav ul li a:hover {
+ background-color: grey;
+}
+/* END HEADER STYLES */
+
+/* START FOOTER STYLES */
+footer {
+ padding: 40px 35px;
+ background: grey;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ width: 100%;
+}
+
+footer h4 {
+ color: black;
+ font-size: 30px;
+ margin: 0;
+}
+/* END FOOTER STYLES */
+
+
+/* HERO STYLES START */
 .hero {
+ background-image: url('../Images/20998787.jpg');
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ align-items: flex-start;
+ background-attachment: fixed;
+ background-position: 80%;
+ grid-template-columns: 50% 50%;
+}
+
+.section-title h2 {
+ background-color: grey;
+ color: white;
+ margin: 4%;
+ width: 25%;
+ justify-content: space-between;
+ padding: 15px;
+ font-size: 3vw;
+ text-align: center;
+ border-radius: 10px;
+}
+
+.hero-about img {
+ height: 70%;
+ width: 20%;
+ border: 2px solid black;
+ border-radius: 100px;
+ margin: 25px;
+}
+
+.hero-about h2 {
+text-align: center;
+}
+
+.hero-about p {
+ background-color: white;
+ justify-content: flex-end;
+}
+
+/* START MY WORKS STYLES */
+.section-title {
  background-image: url('../Images/20998787.jpg');
  background-size: cover;
  display: flex;
@@ -77,19 +144,35 @@ header nav ul li a:visited {
  background-position: 80%;
 }
 
-.hero-about h2 {
- background-color: grey;
- color: white;
- margin: 25px;
- width: 15%;
- justify-content: center;
- padding: 15px;
- font-size: 1.5vw;
+.work {
+ justify-content: space-around;
 }
 
-.hero-about img {
- height: 90%;
- width: 30%;
+.work h2 {
+ color: black;
+ margin: 5px;
  border: 2px solid black;
+ font-size: 24px;
+ background-color: white;
  justify-content: space-around;
+
+}
+
+.work img {
+ width: 50%;
+ height: 50%;
+ border-radius: 20px;
+ border: 3px solid black;
+}
+
+.contact {
+ justify-content: space-around;
+}
+.contact img {
+ width: 20%;
+ height: 20%;
+}
+
+.contact h2 {
+ width: 100%;
 }
