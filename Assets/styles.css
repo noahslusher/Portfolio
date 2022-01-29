@@ -44,11 +44,12 @@ header h1 {
  border-top: 1px solid black;
  border-bottom: 1px solid black;
  padding-top: 8px;
- font-style:oblique;
+ font-style: oblique;
 }
 
 header h1 a {
  text-decoration: none;
+ color: white;
 }
 
 header h1 a:visited {
