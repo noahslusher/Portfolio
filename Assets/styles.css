@@ -39,11 +39,12 @@ header h1 {
  font-size: 7vw;
  color: white;
  margin: 0;
- text-shadow: 0 0 20px black;
+ text-shadow: 0 0 10px black;
  margin-left: 5%;
  border-top: 1px solid black;
  border-bottom: 1px solid black;
  padding-top: 8px;
+ font-style:oblique;
 }
 
 header h1 a {
@@ -68,7 +69,7 @@ header nav ul li a {
  font-size: 2.5vw;
  color: white;
  list-style: none;
- text-shadow: 0 0 20px black;
+ text-shadow: 0 0 15px black;
  text-decoration: none;
  border-top: 1px solid black;
  border-bottom: 1px solid black;;
@@ -88,7 +89,7 @@ footer {
  padding: 40px 35px;
  background: grey;
  display: flex;
- justify-content: space-between;
+ justify-content: flex-end;
  flex-wrap: wrap;
  width: 100%;
 }
@@ -97,6 +98,7 @@ footer h4 {
  color: black;
  font-size: 30px;
  margin: 0;
+ text-shadow: 0 0 20px white;
 }
 /* END FOOTER STYLES */
 
