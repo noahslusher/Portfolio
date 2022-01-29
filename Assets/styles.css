@@ -293,12 +293,12 @@ justify-content: space-between;
 .icons {
  display: flex;
  flex-direction: row;
- max-width: 100%;
+ flex-wrap: wrap;
  justify-content: space-evenly;
 }
 
 .instagram img {
- width: 25%;
+ width: 300px;
 }
 
 .linkedin img {
@@ -306,14 +306,34 @@ justify-content: space-between;
  margin-top: 50px;
 }
 
+.icon-info {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ margin: 20px;
+ width: 40%;
+ max-width: 40%;
+ align-items: center;
+}
+
 .info {
  display: flex;
  flex-direction: column;
- width: 10%;
+ flex-wrap: wrap;
+ width: fit-content;
  height: fit-content;
  border: 5px solid black;
- justify-content: space-around;
- margin: 10%;
- padding: 5%;
+ margin: 2%;
+ padding: 1vw;
  background-color: white;
+ align-items: center;
+}
+
+.info > h3 {
+ font-size: 1.5vw;
+}
+
+.info > p {
+ font-size: 1.5vw;
 }
