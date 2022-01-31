@@ -167,104 +167,162 @@ text-align: center;
 
 
 /* START MY WORKS STYLES */
-.my-work {
+.my-works {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
   padding-top: 25%;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
  }
 
 
-.my-work h2 {
- color: black;
- margin: 5px;
- border: none;
- font-size: auto;
- background-color: white;
- height: 10%;
- padding: 0;
+.my-works h2 {
+  color: black;
+  margin: 5px;
+  border: none;
+  font-size: 3vw;
+  background-color: white;
+  height: 10%;
+  padding: 0;
 }
 
+/* CARD STYLES START*/
 
-
-/* BIGCARD STYLES START*/
-.bigcard {
+.cards {
  display: flex;
- flex-wrap: wrap;
+ width: 100%;
  flex-direction: column;
- max-width: 80%;
- max-height: 70%;
- align-items: center;
-justify-content: space-evenly;
- margin-top: 10%;
- margin-bottom: 3%;
- border: 4px solid black;
- flex: 1;
- box-shadow: 0 0 15px black;
-}
-
-.bigcard > header {
- font-size: 3vw;
- justify-content: center;
- padding: auto;
- background-color: white;
- width: auto;
-}
-
-.bigcard > a img {
- width: 100%;
- height: fit-content;
  align-items: center;
 }
 
-.bigcard > header {
- border-radius: 50px 50px 0px 0px;
- padding: 20px;
-}
-/* BIGCARD STYLES END */
-
-
-
-.my-work-row {
- display: flex;
- flex-wrap: wrap;
- max-width: 100%;
- padding-top: ;
- flex-direction: row;
- justify-content: space-around;
+.card1 {
+  position: relative;
+  width: 70%;
+  max-width: 70%;
+  justify-content: center;
+  margin-top: 10%;
+  border: 2px solid black;
+  box-shadow: 0 0 20px black;
 }
 
-
-.card {
- display: flex;
- flex-wrap: wrap;
- flex-direction: row;
- max-width: 40%;
- max-height: 35%;
- justify-content: center;
- justify-content: space-evenly;
- margin-top: 10%;
- margin-bottom: 3%;
- border: 2px solid black;
- flex: 1;
- box-shadow: 0 0 15px black;
- margin-bottom: 15%;
+.card1 a img {
+  width:100%;
+  height: 100%;
+  position: relative;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
 }
 
-.card > header {
- font-size: 3vw;
- align-items: center;
+.card-text {
+  position: absolute;
+  bottom: 20%;
+  font-size: 24px;
+  position: absolute;
+  padding: 3%;
+  background-color: #444444;
+  width: fit-content;
+  border: 5px solid #2986cc;
+  color: white;
 }
 
-.card a img {
- width: 100%;
- height: 100%;
- align-items: center;
+.card-text h4 {
+  font-size: 36px;
 }
 
- 
+.card-text h5 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+
+.card1 img:hover {
+  filter: grayscale(0%)
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+
+/* CARD1 STYLES END */
+
+
+.cardn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 70%;
+  width: 90%;
+  height: fit-content;
+  margin-top: 3%;
+  
+}
+
+.card2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin-right: 1%;
+  border: 2px solid black;
+  box-shadow: 0 0 20px black;
+}
+
+.card2 a img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+
+.card2-text {
+  position: absolute;
+  bottom: 20%;
+  font-size: 16px;
+  font-size: 3vw;
+  padding: 3%;
+  background-color: #444444;
+  width: fit-content;
+  border: 5px solid #2986cc;
+  color: white;
+}
+
+.card2 img:hover {
+  filter: grayscale(0%)
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+
+.card3 {
+  position: relative;
+  width: 50%;
+  height: 300px;
+  margin-left: 1%;
+  border: 2px solid black;
+  box-shadow: 0 0 20px black;
+}
+.card3 a img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+
+.card3 img:hover {
+  filter: grayscale(0%)
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+
+
 
 /* START CONTACT ME STYLES */
 .contact {
