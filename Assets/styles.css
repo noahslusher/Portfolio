@@ -467,6 +467,10 @@ justify-content: space-between;
   box-shadow: none;
 }
 
+.card1 a img, .card2 a img, .card3 a img{
+  filter: none;
+}
+
 .card2 {
   height: 125px;
   box-shadow: none;
