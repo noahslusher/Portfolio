@@ -217,8 +217,6 @@ text-align: center;
 .card-text {
   position: absolute;
   bottom: 20%;
-  font-size: 24px;
-  position: absolute;
   padding: 3%;
   background-color: #444444;
   width: fit-content;
@@ -346,13 +344,13 @@ justify-content: space-between;
 }
 
 .icon {
- display: flex;
+
  margin-bottom: 3%;
  margin-bottom: 15%;
 }
 
 .icons {
- display: flex;
+ 
  flex-direction: row;
  flex-wrap: wrap;
  justify-content: space-evenly;
@@ -367,16 +365,6 @@ justify-content: space-between;
  margin-top: 50px;
 }
 
-.icon-info {
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-evenly;
- margin: 20px;
- width: 40%;
- max-width: 40%;
- align-items: center;
-}
 
 .info {
  display: flex;
@@ -397,4 +385,207 @@ justify-content: space-between;
 
 .info > p {
  font-size: 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES FOR SMALLER DEVICES */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+   
+  }
+
+
+  header nav ul li a {
+    font-size: 10px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bio img {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.bio p {
+  font-size: 11px;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+
+.card-text {
+  width: fit-content;
+  font-size: 10px;
+}
+
+.card-text h4 {
+  font-size: 12px;
+}
+
+.card-text h5 {
+  font-size: 8px;
+}
+
+.card1 {
+  box-shadow: none;
+}
+
+.card2 {
+  height: 125px;
+  box-shadow: none;
+}
+
+.card3 {
+  height: 125px;
+  box-shadow: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+  
+}
+
+.instagram {
+  margin: none;
+}
+
+.linkedin {
+  height: 0;
+  width: 0;
+}
+
+.linkedin a {
+  margin: none;
+  height: 20px;
+}
+.instagram a img {
+  width: 50px;
+  height: 50px;
+  margin: none;
+  float: top;
+}
+
+.linkedin a img {
+  width: 40px;
+  height: 40px;
+  margin: none;
+  float: top;
+}
+
+.info {
+  margin: none;
+}
+
+footer {
+  padding: 8px;
+}
+
+footer h4 {
+  font-size: 10px;
+}
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
 }
