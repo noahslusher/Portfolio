@@ -12,6 +12,13 @@ body {
  grid-template-columns: 50% 50%;
 }
 
+
+
+
+
+
+
+
 /* START HEADER STYLES */
 header {
  padding: 20px 35px;
@@ -39,12 +46,17 @@ header h1 {
  font-size: 7vw;
  color: white;
  margin: 0;
- text-shadow: 0 0 10px black;
+  text-shadow: -1.5px 1.5px 0 #80576b,
+  1.5px 1.5px 0 #80576b,
+ 1.5px -1.5px 0 #80576b,
+-1.5px -1.5px 0 #80576b;
  margin-left: 5%;
  border-top: 1px solid black;
  border-bottom: 1px solid black;
  padding-top: 8px;
  font-style: oblique;
+ padding-right: 10px;
+ padding-left: 10px;
 }
 
 header h1 a {
@@ -67,10 +79,13 @@ header nav ul {
 header nav ul li a {
  padding: 10px 15px;
  font-weight: lighter;
- font-size: 2.5vw;
+ font-size: 3vw;
  color: white;
  list-style: none;
- text-shadow: 0 0 15px black;
+ text-shadow: -0.75px 0.75px 0 #80576b,
+ 0.75px 0.75px 0 #80576b,
+0.75px -0.75px 0 #80576b,
+-0.75px -0.75px 0 #80576b;
  text-decoration: none;
  border-top: 1px solid black;
  border-bottom: 1px solid black;;
@@ -81,27 +96,50 @@ header nav ul li a:visited {
 }
 
 header nav ul li a:hover {
- background-color: grey;
+ background-color: #efeded;
 }
 /* END HEADER STYLES */
 
+
+
+
+
+
+
+
+
+
+
+
 /* START FOOTER STYLES */
 footer {
- padding: 40px 35px;
- background: grey;
+ background: #80576b;
  display: flex;
- justify-content: flex-end;
+ justify-content: flex-start;
  flex-wrap: wrap;
  width: 100%;
+ padding: 20px 15px;
 }
 
 footer h4 {
- color: black;
+ color: white;
  font-size: 30px;
  margin: 0;
- text-shadow: 0 0 20px white;
+ text-shadow: -0.5px 0.5px 0 black,
+ 0.5px 0.5px 0 black,
+0.5px -0.5px 0 black,
+-0.5px -0.5px 0 black;
 }
 /* END FOOTER STYLES */
+
+
+
+
+
+
+
+
+
 
 
 /* BACKGROUND STYLES START */
@@ -117,22 +155,55 @@ section {
 /* BACKGROUND STYLES END */
 
 
+
+
+
+
+
+
+
+
+/* START SECTION HEADER STYLES */
+.title {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 1% 0 1% 0;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  }
+  
+  .title h2 {
+    color: white;
+    margin: 3px;
+    border: none;
+    font-size: 5vw;
+    background-color: white;
+    height: 10%;
+    padding: 0;
+    text-shadow: -1px 1px 0 #80576b,
+   1px 1px 0 #80576b,
+  1px -1px 0 #80576b,
+  -1px -1px 0 #80576b;
+  }
+/* END SECTION HEADER STYLES */
+
+
+
+
+
+
+
+
+
+
 /* START ABOUT ME STYLES */
 .about {
  display: flex;
  flex-wrap: wrap;
  max-width: 100%;
  padding-top: 50%;
-}
-
-.title {
-border-top: 3px solid black;
-border-bottom: 3px solid black;
-padding: 1% 0 1% 0;
-width: 100%;
-background-color: white;
-justify-content: center;
-text-align: center;
 }
 
 .bio {
@@ -150,7 +221,6 @@ text-align: center;
  border-radius: 50px;
  margin: auto;
  box-shadow: 0 0 30px black;
- 
 }
 
 .bio p {
@@ -172,21 +242,9 @@ text-align: center;
   flex-wrap: wrap;
   max-width: 100%;
   padding-top: 25%;
+  padding-bottom: 10%;
   justify-content: center;
  }
-
-
-.my-works h2 {
-  color: black;
-  margin: 5px;
-  border: none;
-  font-size: 3vw;
-  background-color: white;
-  height: 10%;
-  padding: 0;
-}
-
-/* CARD STYLES START*/
 
 .cards {
  display: flex;
@@ -194,7 +252,7 @@ text-align: center;
  flex-direction: column;
  align-items: center;
 }
-
+                /* START CARD 1 STYLES */
 .card1 {
   position: relative;
   width: 70%;
@@ -214,26 +272,6 @@ text-align: center;
   -webkit-transition: all 1s ease;
 }
 
-.card-text {
-  position: absolute;
-  bottom: 20%;
-  padding: 3%;
-  background-color: #444444;
-  width: fit-content;
-  border: 5px solid #2986cc;
-  color: white;
-}
-
-.card-text h4 {
-  font-size: 36px;
-}
-
-.card-text h5 {
-  font-size: 20px;
-  font-style: italic;
-}
-
-
 .card1 img:hover {
   filter: grayscale(0%)
   filter: gray;
@@ -241,10 +279,42 @@ text-align: center;
   filter: none;
   transition: 1s ease;
 }
+                /* END CARD 1 STYLES */
 
-/* CARD1 STYLES END */
+
+                /* CARD TEXT BOX STYLES */
+.card-text {
+  position: absolute;
+  bottom: 20%;
+  padding: 3%;
+  background-color: #80576b;
+  width: fit-content;
+  border: 5px solid white;
+  color: white;
+}
+
+.card-text h4 {
+  font-size: 36px;
+  text-shadow: -0.5px 0.5px 0 black,
+ 0.5px 0.5px 0 black,
+0.5px -0.5px 0 black,
+-0.5px -0.5px 0 black;
+}
+
+.card-text h5 {
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: -0.5px 0.5px 0 black,
+ 0.5px 0.5px 0 black,
+0.5px -0.5px 0 black,
+-0.5px -0.5px 0 black;
+}
+                /* CARD TEXT BOX STYLES */
 
 
+
+
+                /* START CARD 2 AND 3 STYLES */
 .cardn {
   display: flex;
   flex-direction: row;
@@ -260,7 +330,7 @@ text-align: center;
 .card2 {
   position: relative;
   width: 50%;
-  height: 100%;
+  height: 300px;
   margin-right: 1%;
   border: 2px solid black;
   box-shadow: 0 0 20px black;
@@ -275,17 +345,6 @@ text-align: center;
   -webkit-transition: all 1s ease;
 }
 
-.card2-text {
-  position: absolute;
-  bottom: 20%;
-  font-size: 16px;
-  font-size: 3vw;
-  padding: 3%;
-  background-color: #444444;
-  width: fit-content;
-  border: 5px solid #2986cc;
-  color: white;
-}
 
 .card2 img:hover {
   filter: grayscale(0%)
@@ -319,64 +378,56 @@ text-align: center;
   filter: none;
   transition: 1s ease;
 }
+                /* END CARD 2 AND 3 STYLES */
+
+/* END MY WORKS SECTION */
+
+
+
+
+
+
+
 
 
 
 /* START CONTACT ME STYLES */
 .contact {
-display: flex;
-flex-wrap: wrap;
-max-width: 100%;
-padding-top: 25%;
-flex-direction: row;
-justify-content: space-between;
-}
-
-
-.contact h2 {
- color: black;
- margin: 5px;
- border: none;
- font-size: auto;
- background-color: white;
- height: 10%;
- padding: 0;
-}
-
-.icon {
-
- margin-bottom: 3%;
- margin-bottom: 15%;
-}
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+ }
 
 .icons {
- 
+  display: flex;
+  width: 100%;
  flex-direction: row;
- flex-wrap: wrap;
  justify-content: space-evenly;
+}
+.instagram {
+  width: 20%;
 }
 
 .instagram img {
- width: 300px;
+ width: 100%;
 }
 
+.linkedin {
+  width: 20%;
+}
 .linkedin img {
- width: 200px;
- margin-top: 50px;
+ width: 100%;
 }
 
 
 .info {
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- width: fit-content;
- height: fit-content;
  border: 5px solid black;
  margin: 2%;
  padding: 1vw;
  background-color: white;
  align-items: center;
+ height:fit-content
 }
 
 .info > h3 {
@@ -386,7 +437,7 @@ justify-content: space-between;
 .info > p {
  font-size: 1.5vw;
 }
-
+/* END CONTACT ME SECTION STYLES */
 
 
 
@@ -403,31 +454,49 @@ justify-content: space-between;
 /* MEDIA QUERIES FOR SMALLER DEVICES */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
   header {
-    padding-bottom: 0;
+    width: 100%;
     justify-content: center;
-    position: relative;
-    flex-direction: row;
+    position: sticky;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: #80576b;
+    
   }
 
   header h1 {
     width: 100%;
     text-align: center;
+    font-size: 30px;
+    border: none;
+    padding: none;
+    background-color: #80576b;
   }
 
   header nav ul {
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
+    flex-direction: row;
+    align-items: center;
    
   }
 
 
   header nav ul li a {
-    font-size: 10px;
-    margin-top: 20px;
-    align-items: center;
+    font-size: 15px;
+    border: none;
   }
+
+
 
 .bio {
   display: flex;
