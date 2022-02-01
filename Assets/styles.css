@@ -118,12 +118,14 @@ footer {
  flex-wrap: wrap;
  width: 100%;
  padding: 2vw 2vw;
+ border-top: 0.5vw solid black;
 }
 
 footer h4 {
  color: white;
  font-size: 3vw;
  margin: 0;
+ 
  text-shadow: -0.07vw 0.07vw 0 black,
  0.07vw 0.07vw 0 black,
 0.07vw -0.07vw 0 black,
