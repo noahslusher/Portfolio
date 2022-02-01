@@ -28,7 +28,6 @@ header {
  position: -webkit-sticky;
  position: sticky;
  top: 0;
- background-color: grey;
  background-image: url("../Images/20998787.jpg");
  background-size: cover;
  background-attachment: fixed;
@@ -46,10 +45,10 @@ header h1 {
  font-size: 7vw;
  color: white;
  margin: 0;
-  text-shadow: -1.5px 1.5px 0 #80576b,
-  1.5px 1.5px 0 #80576b,
- 1.5px -1.5px 0 #80576b,
--1.5px -1.5px 0 #80576b;
+  text-shadow: -0.11vw 0.11vw 0 #80576b,
+  0.11vw 0.11vw 0 #80576b,
+ 0.11vw -0.11vw 0 #80576b,
+-0.11vw -0.11vw 0 #80576b;
  margin-left: 5%;
  border-top: 1px solid black;
  border-bottom: 1px solid black;
@@ -82,10 +81,10 @@ header nav ul li a {
  font-size: 3vw;
  color: white;
  list-style: none;
- text-shadow: -0.75px 0.75px 0 #80576b,
- 0.75px 0.75px 0 #80576b,
-0.75px -0.75px 0 #80576b,
--0.75px -0.75px 0 #80576b;
+ text-shadow: -0.05vw 0.05vw 0 #80576b,
+ 0.05vw 0.05vw 0 #80576b,
+0.05vw -0.05vw 0 #80576b,
+-0.05vw -0.05vw 0 #80576b;
  text-decoration: none;
  border-top: 1px solid black;
  border-bottom: 1px solid black;;
@@ -125,10 +124,10 @@ footer h4 {
  color: white;
  font-size: 30px;
  margin: 0;
- text-shadow: -0.5px 0.5px 0 black,
- 0.5px 0.5px 0 black,
-0.5px -0.5px 0 black,
--0.5px -0.5px 0 black;
+ text-shadow: -0.07vw 0.07vw 0 black,
+ 0.07vw 0.07vw 0 black,
+0.07vw -0.07vw 0 black,
+-0.07vw -0.07vw 0 black;
 }
 /* END FOOTER STYLES */
 
@@ -182,10 +181,10 @@ section {
     background-color: white;
     height: 10%;
     padding: 0;
-    text-shadow: -1px 1px 0 #80576b,
-   1px 1px 0 #80576b,
-  1px -1px 0 #80576b,
-  -1px -1px 0 #80576b;
+    text-shadow: -0.07vw 0.07vw 0 #80576b,
+   0.07vw 0.07vw 0 #80576b,
+  0.07vw -0.07vw 0 #80576b,
+  -0.07vw -0.07vw 0 #80576b;
   }
 /* END SECTION HEADER STYLES */
 
@@ -295,19 +294,19 @@ section {
 
 .card-text h4 {
   font-size: 36px;
-  text-shadow: -0.5px 0.5px 0 black,
- 0.5px 0.5px 0 black,
-0.5px -0.5px 0 black,
--0.5px -0.5px 0 black;
+  text-shadow: -0.07vw 0.07vw 0 black,
+ 0.07vw 0.07vw 0 black,
+0.07vw -0.07vw 0 black,
+-0.07vw -0.07vw 0 black;
 }
 
 .card-text h5 {
   font-size: 20px;
   font-style: italic;
-  text-shadow: -0.5px 0.5px 0 black,
- 0.5px 0.5px 0 black,
-0.5px -0.5px 0 black,
--0.5px -0.5px 0 black;
+  text-shadow: -0.07vw 0.07vw  black,
+ 0.07vw 0.07vw 0 black,
+0.07vw -0.07vw 0 black,
+-0.07vw -0.07vw 0 black;
 }
                 /* CARD TEXT BOX STYLES */
 
@@ -457,28 +456,38 @@ section {
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:content-box;
   }
   
   header {
     width: 100%;
-    justify-content: center;
     position: sticky;
-    flex-direction: column;
     border: none;
     padding: 0;
     margin: 0;
     background-color: #80576b;
-    
+    background-image: url("../Images/20998787.jpg");
+    background-size: 90%;
+    background-attachment: fixed;
+    z-index: 9999;
+    flex-direction: row;
   }
 
+  section {
+    background-image: url('../Images/20998787.jpg');
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+    background-size: 90%;
+    
+   }
+
   header h1 {
-    width: 100%;
-    text-align: center;
     font-size: 30px;
     border: none;
     padding: none;
-    background-color: #80576b;
+    align-self: flex-start;
+    background-color: #efeded;
   }
 
   header nav ul {
@@ -492,8 +501,9 @@ section {
 
 
   header nav ul li a {
-    font-size: 15px;
+    font-size: 12px;
     border: none;
+    background-color: #efeded;
   }
 
 
