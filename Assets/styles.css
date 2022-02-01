@@ -28,11 +28,7 @@ header {
  position: -webkit-sticky;
  position: sticky;
  top: 0;
- background-image: url("../Images/20998787.jpg");
- background-size: cover;
- background-attachment: fixed;
- background-position: 80%;
- background-position-y: -10%;
+ background-color: white;
  z-index: 9999;
 }
 
@@ -483,10 +479,11 @@ section {
 
   header h1 {
     font-size: 9vw;
-    margin-top: 
-    padding: 0;
     border: 0;
-    
+    text-shadow: -0.1vw 0.1vw 0 black,
+   0.1vw 0.1vw 0 black,
+  0.1vw -0.1vw 0 black,
+  -0.1vw -0.1vw 0 black;
   }
 
 
@@ -501,9 +498,10 @@ section {
     width: 100%;
     flex-direction: row;
     align-items: center;
-    border: 0.06vw solid black;
+    border-top: 0.06vw solid black;
+    border-bottom: 0.06vw solid black;
     padding: 2px;
-    background-color: white;
+    
   }
 
 
@@ -512,6 +510,10 @@ section {
     border: none;
     padding: 1vw;
     margin: none;
+    text-shadow: -0.1vw 0.1vw 0 black,
+   0.1vw 0.1vw 0 black,
+  0.1vw -0.1vw 0 black,
+  -0.1vw -0.1vw 0 black;
   }
 
   header nav ul li a:hover {
