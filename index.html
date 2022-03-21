@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="./Assets/styles.css">
+        <script src="https://kit.fontawesome.com/39fb587b11.js" crossorigin="anonymous"></script>
         <title>Noah Slusher's Portfolio</title>
     </head>
     
@@ -31,6 +33,11 @@
         <!-- END Header and Navigation Tabs -->
 
         <!-- HERO/PAGE BACKGROUND is a black and white drawing of mountains -->
+        <div class="text-center" id="hero-text">
+            <p>
+                "Noah Slusher. Biologist turned Programmer. Welcomer of all challenges."
+            </p>
+        </div>
 
         <!-- START ABOUT ME SECTION -->
         <section class="about">
@@ -40,21 +47,26 @@
                 </h2>
             </div>
             <div class="bio">
-                <img src="./Images/IMG_9582.jpg" alt="professional photo of Noah Slusher" />
+                <div>
+                    <img src="./Images/IMG_9582.jpg" alt="professional photo of Noah Slusher" />
+                </div>
+                <div id="bio-p">
+                    <h4>
+                    Welcome to my online portfolio!
+                    </h4>
                     <p>
-                    Thanks for taking the time to check out my online portfolio! 
-                    My name is Noah Slusher and I am originally from Las Vegas, NV.
-                    I lived in Las Vegas for my entire life until I graduated high school.
-                    Upon graduating, I pursued an undergraduate degree in Biological Sciences at Southern Methodist University in Dallas, TX.
-                    While there, I also completed a minor in applied physiology.
-                    <br>
-                        Aside from academics, I love many things in life.
-                    I am most passionate about the outdoors. 
-                    I love the mountains and the beach and I love being active.
-                    Photography is very important to me and I mostly capture nature scenes.
-                    I like to stay active by lifting weights, hiking, skiing, snowboarding, and doing jiu jitsu.
-                    This is a very small snippet about myself, don't be a stranger and feel free to contact me to learn more!
+                    My name is Noah Slusher. 
+                    Originally I am from Las Vegas, NV, but I completed my undergraduate degree in Dallas, TX at Southern Methodist University where I earned a B.S. in Biological Sciences.
+                    After completing my degree, I moved to Salt Lake City, UT which is where I currently reside.
+                    I used my degree for a few years before deciding I wanted to pursue an alternative career.
+                    In the beginning of 2022, I embarked on my coding journey and could not be happier that I made this decision.
+                    While I am new to the field, I welcome every challenge I encounter while trying to perfect my coding abilities.
+                    Below, you will find some of the projects I have completed over the past few months.
+                    I hope you enjoy them!
+                    Do not be a stranger, you can find my contact information at the bottom of page!
+                    Cheers!
                     </p>
+                </div>
             </div>
         </section>
         <!-- END THE ABOUT ME SECTION -->
@@ -68,63 +80,72 @@
                 </h2>
             </div>
             
-            <div class="cards">
-                <div class="card1">
-                    <a href="https://noahslusher.github.io/NP-trip-planner/" target="_blank"><img src="./Images/Screen Shot 2022-03-10 at 7.20.50 PM.png" alt="landing page for park advisor website"></a>
-                        <div class="card-text">
-                            <h4>Park Advisor</h4>
-                            <h5>HTML CSS JavaScript APIs</h5>
-                        </div>
+            <div class="card-section">
+                <div class="cards" id="card1">
+                    <div class="card-image">
+                        <a href="https://noahslusher.github.io/NP-trip-planner/" target="_blank"><img src="./Images/Screen Shot 2022-03-10 at 7.20.50 PM.png" alt="landing page for park advisor website"></a>
+                    </div>    
                 </div>
-                <div class="cardn">
+                <div class="card-text">
+                    <h4>Park Advisor</h4>
+                    <h5>HTML CSS Tailwind JavaScript 3rd-Party APIs</h5>
+                </div>
+
+
+                <div class="cards" id="card2">
+                    <div class="card-image">
+                        <a href="https://noahslusher.github.io/weather-dashboard/" target="_blank"><img src="./Images/Screen Shot 2022-03-21 at 12.01.37 PM.png" alt="screenshot of weather dashboard page"></a>
+                    </div>    
+                </div>
+                <div class="card-text">
+                    <h4>Weather Dashboard</h4>
+                    <h5>JavaScript Jquery 3rd-Party APIs</h5>
+                </div>
                     
-                    <div class="card2">
-                        <a href="https://noahslusher.github.io/run-buddy/" target="_blank"><img src="./Images/Screen Shot 2022-01-27 at 11.30.14 PM.png" alt="landing page for run-buddy website"></a>
-                            <div class="card-text">
-                                <h4>Run-Buddy</h4>
-                                <h5>HTML CSS</h5>
-                            </div>
-                    </div>
-                    
-                    <div class="card3">
-                        <a href="/"><img src="./Images/maldives-5120x2880-seychelles-beach-ocean-coast-palm-sky-5k-17851.jpg" alt="picture of the beach"></a>
-                        <div class="card-text">
-                            <h4>The Beach</h4>
-                            <h5>MERN Stack</h5>
-                        </div>
-                    </div>
+                <div class="cards" id="card3">
+                    <div class="card-image">
+                        <a href="https://noahslusher.github.io/coding-quiz/" target="_blank"><img src="./Images/Screen Shot 2022-02-20 at 9.34.15 PM.png" alt="landing page of coding quiz website"></a>
+                    </div>    
+                </div>
+                <div class="card-text">
+                    <h4>Coding Quiz</h4>
+                    <h5>HTML CSS JavaScript</h5>
                 </div>
             </div>
-        
         </section>
         
         <!-- END MY WORKS SECTION -->
 
         <!-- START CONTACT SECTION -->
-        <section id="Get-in-Touch" class="contact">
+        
             <div class="title">
                 <h2>
                     Get in Touch
                 </h2>
             </div>
 
-            <div class="icons">
+            <div class="row justify-content-center align-items-center icons">
                 <div class="instagram">
-                    <a href="https://www.instagram.com/slush_daddy/" target="_blank"><img src="./Images/Screen Shot 2022-01-31 at 6.05.26 PM.png" alt="instagram logo"></a>
+                    <a href="https://www.instagram.com/slush_daddy/" target="_blank"><img src="./Images/instagram-square-brands.svg" alt="instagram logo"></a>
                 </div>
                 <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/noah-slusher/" target="_blank"><img src="./Images/Screen Shot 2022-01-31 at 6.05.10 PM.png" alt="linkedin logo"></a>
+                    <a href="https://www.linkedin.com/in/noah-slusher/" target="_blank"><img src="./Images/linkedin-brands.svg" alt="linkedin logo"></a>
                 </div>
-                <div class="info">
-                    <h3>Telephone</h3>
-                        <p> (702) 606-7055</p>
+                <div class="github ">
+                    <a href="https://github.com/noahslusher" target="_blank"> <img src="./Images/github-brands.svg" alt="github logo"></a>
                 </div>
-                <div class="info">
-                    <h3>Email</h3>
-                        <p>N.V.Slusher@gmail.com</p>
+                <div class="row justify-content-center align-items-center contact-info">
+                    <div class="info">
+                        <h3>Telephone</h3>
+                            <p> (702) 606-7055</p>
+                    </div>
+                    <div class="info">
+                        <h3>Email</h3>
+                            <p>N.V.Slusher@gmail.com</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        
         <!-- END CONTACT SECTION -->
 
         <!-- START FOOTER -->
